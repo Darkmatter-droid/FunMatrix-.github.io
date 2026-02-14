@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="clock.css">
+</head>
+<body>
+    <div class="clock-container">
+        <h1>Digital Clock</h1>
+        <div class="time-display">
+            <div class="time" id="time">00:00:00</div>
+            <div class="date" id="date">January 1, 2024</div>
+        </div>
+        <div class="controls">
+            <button id="format-toggle" class="btn">12 Hour</button>
+            <button id="theme-toggle" class="btn">Dark Theme</button>
+            <button id="timezone-toggle" class="btn">UTC</button>
+            <button id="fullscreen-toggle" class="btn">Fullscreen</button>
+        </div>
+        <div class="additional-info">
+            <div class="info-item">
+                <span class="label">Timezone:</span>
+                <span id="timezone-display">Local</span>
+            </div>
+            <div class="info-item">
+                <span class="label">Format:</span>
+                <span id="format-display">24 Hour</span>
+            </div>
+        </div>
+    </div>
+    <script src="clock.js"></script>
+</body>
+</html>

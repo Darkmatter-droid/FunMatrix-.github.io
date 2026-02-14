@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #1e1e1e;
+    text-align: center;
+}
+
+.calculator-body{
+    background-color: #000000;
+    margin: 20px auto;
+    height: 90vh;
+    max-height: 600px;
+    width: 50vh;
+    max-width: 500px;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5vmin;
+    box-shadow: 0 0 1rem rgba(255,255 ,255 , 1);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#display{
+    background-color: #000000; 
+    color : #ffffff;
+    border: none;
+    height: 25vh;
+    max-height: 150px;
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    font-size: 50px;
+    padding: 20px;
+    border-radius: 10%;
+    caret-color: #ffffff;
+    text-align: right;
+}
+
+
+#display:focus{
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    font-size: 30px;
+    border: 1px solid black;
+    background-color: #333333;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.button:hover {
+    background-color: #555555;
+}
+
+.button:active {
+    background-color: #777777;
+    transform: scale(0.95);
+}
+
+.elements{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#division, #multipication{
+    background-color: #FF9500;
+    color: #ffffff;
+}
+
+#multipication{
+    background-color: #FF9500;
+    color: #ffffff;
+}
+
+
+#minus{
+    background-color: #FF9500;
+    color: #ffffff;
+}
+
+
+#plus{
+    background-color: #FF9500;
+    color: #ffffff;
+}
+
+
+#equal{
+    background-color: #FF9500;
+    color: #ffffff;
+}
+
+
+#zero{
+    width: calc(70px * 2 + 10px); /* Twice the width plus gap */
+    border-radius: 30px;
+    background-color: #333333;
+    color: #ffffff;
+}
+#clear, #plus-minus, #percentage {
+    background-color: #A5A5A5;
+    color: #000000;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .calculator-body {
+        width: 95vw;
+        max-width: none;
+        padding: 15px;
+        gap: 10px;
+    }
+    
+    #display {
+        font-size: 32px;
+        height: 12vh;
+        min-height: 60px;
+        padding: 15px;
+    }
+    
+    .button {
+        height: 50px;
+        width: 50px;
+        font-size: 20px;
+    }
+    
+    #zero {
+        width: calc(50px * 2 + 10px);
+    }
+}
